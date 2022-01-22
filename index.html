@@ -3,23 +3,118 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        .dot {
-            height: 25px;
-            width: 25px;
+        .circle {
+            position: absolute;
+            top: 50px;
+            left: 500px;
+        }
+        .right_bottom_circle {
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            height: 250px;
+            width: 250px;
             background-color: #bbb;
+            border-radius: 0 0 250px 0;
+            display: inline-block;
+        }
+
+        .right_bottom_circle:hover {
+            height: 300px;
+            width: 300px;
+            border-radius: 0 0 300px 0;
+            display: inline-block;
+        }
+        .left_bottom_circle {
+            position: absolute;
+            top: 250px;
+            left: 0px;
+            height: 250px;
+            width: 250px;
+            background-color: #F0F8FF;
+            border-radius: 0 0 0 250px;
+            display: inline-block;
+        }
+        .left_bottom_circle:hover {
+            left: -50px;
+            height: 300px;
+            width: 300px;
+            border-radius: 0 0 0 300px;
+            display: inline-block;
+        }
+        .left_top_circle {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 250px;
+            width: 250px;
+            background-color: #5F9EA0;
+            border-radius: 250px 0 0 0;
+            display: inline-block;
+        }
+        .left_top_circle:hover {
+            left: -50px;
+            top: -50px;
+            height: 300px;
+            width: 300px;
+            border-radius: 300px 0 0 0;
+            display: inline-block;
+        }
+        .right_top_circle {
+            position: absolute;
+            top: 0px;
+            left: 250px;
+            height: 250px;
+            width: 250px;
+            background-color: #A52A2A;
+            border-radius: 0 250px 0 0;
+            display: inline-block;
+        }
+        .right_top_circle:hover {
+            top: -50px;
+            left: 250px;
+            height: 300px;
+            width: 300px;
+            border-radius: 0 300px 0 0;
+            display: inline-block;
+        }
+        .middle_circle {
+            position: absolute;
+            top: 185px;
+            left: 185px;
+            height: 125px;
+            width: 125px;
+            background-color: white;
             border-radius: 50%;
+            display: inline-block;
+            border: 5px solid gold;
+        }
+        .right_top_hover {
+            position: absolute;
+            top: 0px;
+            left: 250px;
+            height: 250px;
+            width: 250px;
+            background-color: #A52A2A;
+            border-radius: 0 250px 0 0;
             display: inline-block;
         }
     </style>
 </head>
 <body>
 
-<div style="text-align:center">
-    <h1>Round Dots / Circles</h1>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
+<div class="circle">
+    <span class="left_top_circle"></span>
+    <span class="right_top_circle"></span>
+    <span class="left_bottom_circle"></span>
+    <span class="right_bottom_circle"></span>
+    <span class="middle_circle"></span>
+<!--    <div class="right_top_hover">-->
+<!--        <span class="band_one"></span>-->
+<!--        <span class="band_two"></span>-->
+<!--        <span class="band_three"></span>-->
+<!--        <span class="band_four"></span>-->
+<!--    </div>-->
 </div>
 
 </body>
